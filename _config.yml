@@ -1,0 +1,40 @@
+# ── Site identity ─────────────────────────────────────────────
+title: Henry Guidry
+tagline: Cybersecurity student
+description: >-
+  Cybersecurity student at Christopher Newport University writing about
+  homelabs, network defense, and the things I break while learning.
+url: "https://YOUR-USERNAME.github.io"   # change to your custom domain later
+baseurl: ""
+
+author:
+  name: Henry Guidry
+  email: you@example.com                 # TODO
+  github: YOUR-GITHUB                    # TODO (username only)
+  linkedin: YOUR-LINKEDIN-SLUG           # TODO (the part after /in/)
+
+# Sidebar "Currently" block — edit freely
+currently:
+  - Finishing a B.S. in Cybersecurity at CNU (May 2027)
+  - Security+ done; CCNA prep over winter break
+  - Planning my senior capstone
+  - Expanding the Proxmox homelab
+
+# ── Build ─────────────────────────────────────────────────────
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
