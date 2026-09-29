@@ -4,7 +4,7 @@ tagline: Cybersecurity student
 description: >-
   Cybersecurity student at Christopher Newport University writing about
   homelabs, network defense, and the things I break while learning.
-url: "henryguidry.org"   # change to your custom domain later
+url: "https://henryguidry.org"   # change to your custom domain later
 baseurl: ""
 
 author:
