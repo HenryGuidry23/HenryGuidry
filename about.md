@@ -5,7 +5,7 @@ permalink: /about/
 description: Cybersecurity student, homelab builder, and aspiring analyst.
 ---
 
-I'm Henry Guidry, a Cybersecurity student at Christopher Newport University with a minor in Data Science, graduating in May 2027.
+I'm Henry Guidry, a Cybersecurity student at Christopher Newport University, graduating in May 2027.
 
 <!-- TODO: add your own "how I got into security" story here — a sentence or two in your voice. -->
 
