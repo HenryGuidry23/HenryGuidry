@@ -16,7 +16,6 @@ layout: default
         <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 40 }}</p>
         <div class="card-foot">
           <a class="read" href="{{ post.url | relative_url }}">Continue reading</a>
-          {% include share.html post=post %}
         </div>
       </article>
       {% endfor %}
