@@ -21,7 +21,6 @@ I'm Henry Guidry, a Cybersecurity student at Christopher Newport University with
 | Role | Where | When |
 |---|---|---|
 | Security Officer | Securitas, Haymarket, VA | Jun 2026 – Aug 2026 |
-| Package Handler | FedEx Ground, Leesburg, VA | Part-time |
 | Pool Manager | Crystal Aquatics, Leesburg, VA | May 2023 – Aug 2024 |
 
 ## Get in touch
