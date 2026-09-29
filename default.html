@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  {% include header.html %}
+  <main id="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  {% if page.mermaid %}
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+  <script>
+    document.querySelectorAll("pre > code.language-mermaid").forEach(function (code) {
+      var div = document.createElement("div");
+      div.className = "mermaid";
+      div.textContent = code.textContent;
+      var wrapper = code.closest(".highlighter-rouge") || code.parentElement;
+      wrapper.replaceWith(div);
+    });
+    var dark = document.documentElement.getAttribute("data-theme") === "dark" ||
+      (!document.documentElement.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+    mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "neutral" });
+  </script>
+  {% endif %}
+</body>
+</html>

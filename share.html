@@ -1,0 +1,9 @@
+{% assign share_url = include.post.url | absolute_url | cgi_escape %}
+{% assign share_title = include.post.title | cgi_escape %}
+<div class="share">
+  <span>Share</span>
+  <a href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ share_title }}" title="Share on X">X</a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ share_title }}" title="Share on LinkedIn">LinkedIn</a>
+  <a href="https://www.reddit.com/submit?url={{ share_url }}&title={{ share_title }}" title="Share on Reddit">Reddit</a>
+  <a href="mailto:?subject={{ share_title }}&body={{ share_url }}" title="Share via email">Email</a>
+</div>

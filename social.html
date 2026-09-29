@@ -1,0 +1,6 @@
+<ul class="social">
+  {% if site.author.github %}<li><a href="https://github.com/{{ site.author.github }}" rel="me">GitHub</a></li>{% endif %}
+  {% if site.author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" rel="me">LinkedIn</a></li>{% endif %}
+  {% if site.author.email %}<li><a href="mailto:{{ site.author.email }}">Email</a></li>{% endif %}
+  <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+</ul>

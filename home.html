@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="wrap layout-2col">
+  <div class="main-col">
+    <section class="hero">
+      <h1>Notes from a defender in training.</h1>
+      <p>Homelab builds, competition write-ups, and security concepts explained the way I wish they'd been explained to me.</p>
+    </section>
+
+    <section class="featured" aria-label="Latest posts">
+      {% for post in site.posts limit: 2 %}
+      <article class="post-card">
+        {% include post-meta.html post=post %}
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 40 }}</p>
+        <div class="card-foot">
+          <a class="read" href="{{ post.url | relative_url }}">Continue reading</a>
+          {% include share.html post=post %}
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section class="archive">
+      <h2 class="section-title">All posts</h2>
+      {% assign by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+      {% for year in by_year %}
+      <h3 class="year">{{ year.name }}</h3>
+      <ul class="archive-list">
+        {% for post in year.items %}
+        <li>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% include tag-list.html tags=post.tags %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </section>
+  </div>
+  {% include sidebar.html %}
+</div>
