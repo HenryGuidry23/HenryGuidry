@@ -4,19 +4,18 @@ tagline: Cybersecurity student
 description: >-
   Cybersecurity student at Christopher Newport University writing about
   homelabs, network defense, and the things I break while learning.
-url: "https://YOUR-USERNAME.github.io"   # change to your custom domain later
+url: "henryguidry.org"   # change to your custom domain later
 baseurl: ""
 
 author:
   name: Henry Guidry
-  email: you@example.com                 # TODO
-  github: YOUR-GITHUB                    # TODO (username only)
-  linkedin: YOUR-LINKEDIN-SLUG           # TODO (the part after /in/)
-
+  email: guidryhenry77@gmail.com
+  github: HenryGuidry23
+  linkedin: henry-guidry-945a55364        
 # Sidebar "Currently" block — edit freely
 currently:
   - Finishing a B.S. in Cybersecurity at CNU (May 2027)
-  - Security+ done; CCNA prep over winter break
+  - Security+ done; CCNA in progress
   - Planning my senior capstone
   - Expanding the Proxmox homelab
 
