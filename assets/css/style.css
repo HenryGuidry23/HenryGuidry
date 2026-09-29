@@ -89,10 +89,6 @@ img { max-width: 100%; height: auto; }
 .archive-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem 1rem; padding: .5rem 0; border-bottom: 1px dashed var(--line); }
 .archive-list time { color: var(--muted); font-size: .9rem; min-width: 4.5rem; font-variant-numeric: tabular-nums; }
 
-.tag-list { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; padding: 0; }
-.tag-list a { font-size: .8rem; padding: .1rem .55rem; border-radius: 999px; background: var(--accent-soft); color: var(--accent); text-decoration: none; }
-.tag-list a:hover { text-decoration: underline; }
-
 /* ── Sidebar ────────────────────────────────────────────── */
 .sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
 .side-block { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem; }
@@ -104,11 +100,6 @@ img { max-width: 100%; height: auto; }
 .currently ul, .recent ol { margin: 0; padding-left: 1.1rem; font-size: .93rem; }
 .currently li, .recent li { margin-bottom: .35rem; }
 .social { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin: 1rem 0 0; padding: 0; font-size: .9rem; }
-.tag-cloud { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; padding: 0; }
-.tag-cloud a { display: inline-block; font-size: .85rem; padding: .2rem .6rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); text-decoration: none; }
-.tag-cloud a:hover { border-color: var(--accent); color: var(--accent); }
-.tag-cloud .count { color: var(--muted); font-size: .75rem; margin-left: .15rem; }
-.tag-cloud.big { margin-bottom: 2rem; }
 
 /* ── Post & page ────────────────────────────────────────── */
 .post, .page { max-width: 720px; margin: 0 auto; padding: 3rem 0 4rem; }
@@ -136,9 +127,6 @@ img { max-width: 100%; height: auto; }
 .post-nav a:hover { border-color: var(--accent); }
 .post-nav span { display: block; color: var(--muted); font-size: .85rem; }
 .post-nav .next { grid-column: 2; text-align: right; }
-
-.tag-section { padding-top: 1rem; }
-.tag-section h2 { font-size: 1.2rem; margin-bottom: .25rem; }
 
 /* Certifications */
 .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; font-family: var(--sans); margin-bottom: 2rem; max-width: none !important; }

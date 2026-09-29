@@ -31,9 +31,7 @@ layout: default
         {% for post in year.items %}
         <li>
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          {% include tag-list.html tags=post.tags %}
-        </li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>        </li>
         {% endfor %}
       </ul>
       {% endfor %}
