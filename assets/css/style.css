@@ -139,6 +139,13 @@ img { max-width: 100%; height: auto; }
 .cert.progress { border-top: 4px dashed var(--accent); }
 .cert.progress .cert-status { color: var(--accent); }
 
+/* Skills & tools */
+.skill-list { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 2rem; font-family: var(--sans); }
+.skill {
+  background: var(--accent-soft); color: var(--accent); border: 1px solid var(--line);
+  border-radius: 999px; padding: .35rem .9rem; font-size: .9rem; font-weight: 600;
+}
+
 /* ── Footer ─────────────────────────────────────────────── */
 .site-footer { border-top: 1px solid var(--line); background: var(--surface); padding: 2rem 0 1.5rem; }
 .footer-inner { display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
